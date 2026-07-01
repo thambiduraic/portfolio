@@ -7,16 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        'dark': '#0a0a0f',
-        'surface': '#111113',
-        'surface-light': '#1a1a1f',
-        'primary': '#3B82F6',
-        'primary-hover': '#2563EB',
-        'secondary': '#06b6d4',
-        'accent': '#8b5cf6',
-        'text-primary': '#ffffff',
-        'text-secondary': '#9ca3af',
-        'text-muted': '#6b7280',
+        'dark': '#0a0a0f',           // Background
+        'surface': '#111113',        // Cards/surfaces
+        'surface-light': '#1a1a1f',  // Elevated surfaces
+        'primary': '#3B82F6',        // Primary actions (blue)
+        'primary-hover': '#2563EB',  // Hover state
+        'secondary': '#06b6d4',      // Secondary accent (cyan)
+        'accent': '#8b5cf6',         // Highlight accent (purple)
+        'text-primary': '#ffffff',   // Main text
+        'text-secondary': '#9ca3af', // Secondary text
+        'text-muted': '#6b7280',     // Muted/disabled text
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],

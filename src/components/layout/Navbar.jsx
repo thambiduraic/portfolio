@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { Menu, X } from 'lucide-react';
 import { portfolioData } from '../../data/portfolio';
 import { Button } from '../ui/Button';
 
@@ -37,7 +37,7 @@ export const Navbar = () => {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-4 lg:space-x-8">
             {portfolioData.navigation.map((item, index) => (
               <motion.a
                 key={item.name}
@@ -57,10 +57,10 @@ export const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white text-2xl"
+            className="lg:hidden text-text-primary text-2xl"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+            {isMobileMenuOpen ? <X /> : <Menu />}
           </button>
         </div>
       </div>
@@ -72,7 +72,7 @@ export const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-surface border-t border-white/10"
+            className="lg:hidden bg-surface border-t border-white/10"
           >
             <div className="px-6 py-8 space-y-4">
               {portfolioData.navigation.map((item) => (

@@ -13,7 +13,7 @@ export const Card = ({
       transition={{ duration: 0.3 }}
       className={cn(
         "bg-surface border border-white/10 rounded-xl p-6",
-        hover && "hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10",
+        hover && "hover:border-primary/50 hover:shadow-xl hover:shadow-primary/5",
         className
       )}
       {...props}

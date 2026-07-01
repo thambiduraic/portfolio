@@ -1,15 +1,16 @@
 export const portfolioData = {
   personal: {
     name: "Thambidurai",
-    title: "AI Full Stack Developer",
-    tagline: "Building intelligent applications with AI agents",
-    bio: "Full Stack Developer leveraging AI agents to build scalable SaaS and AI-powered web applications. Specialized in React, Flask, and modern AI integration.",
+    title: "Python Full Stack Developer",
+    tagline: "Building scalable web applications and automated workflows with React, Python, Django, and Supabase.",
+    bio: "Full Stack Developer specializing in React for clean client interfaces and Python/Django for robust backend logic. Proficient in relational SQL database clustering, Supabase services, and AI-assisted workflows.",
     email: "thambidurai1604@gmail.com",
     location: "Krishnagiri, India",
     social: {
       github: "https://github.com/thambiduraic",
       linkedin: "https://www.linkedin.com/in/thambidurai-c-700b801b6/"
     },
+    resumeLink: "https://drive.google.com/file/d/17PMNTgMJOe1KJFb51icSmRwmo-9-7nxD/view?usp=sharing",
     stats: {
       yearsExperience: 2,
       projectsCompleted: 6,
@@ -17,43 +18,42 @@ export const portfolioData = {
     }
   },
   
-  skills: {
-    frontend: [
-      { name: "React", icon: "FaReact" },
-      { name: "TypeScript", icon: "SiTypescript" },
-      { name: "JavaScript", icon: "FaJs" },
-      { name: "Redux", icon: "FaCode" },
-      { name: "Tailwind CSS", icon: "FaCss3Alt" }
-    ],
-    backend: [
-      { name: "Node.js", icon: "FaNodeJs" },
-      { name: "Flask", icon: "FaCode" },
-      { name: "Django", icon: "FaCode" },
-      { name: "Java", icon: "FaCode" },
-      { name: "PostgreSQL", icon: "FaDatabase" }
-    ],
-    ai: [
-      { name: "Cursor AI", icon: "FaCode" },
-      { name: "Claude Code", icon: "FaCode" },
-      { name: "OpenCode", icon: "FaCode" },
-      { name: "OpenClaw", icon: "FaCode" },
-      { name: "OpenAI API", icon: "FaCode" }
-    ],
-    tools: [
-      { name: "Git", icon: "FaGitAlt" },
-      { name: "Cursor AI", icon: "FaCode" },
-      { name: "Claude Code", icon: "FaCode" },
-      { name: "VS Code", icon: "FaCode" },
-      { name: "Postman", icon: "FaCode" }
-    ]
-  },
+  skills: [
+    // Frontend
+    { name: 'React', group: 'Frontend', icon: 'Code', projects: ['Expense Tracker', 'Cattle Feed Management System', 'Marketing Automation Tool'] },
+    { name: 'TypeScript', group: 'Frontend', icon: 'Code', projects: ['ReachCopilot'] },
+    { name: 'JavaScript', group: 'Frontend', icon: 'Code', projects: ['All Projects'] },
+    { name: 'Redux', group: 'Frontend', icon: 'Cpu', projects: ['ReachCopilot'] },
+    { name: 'Tailwind CSS', group: 'Frontend', icon: 'Layers', projects: ['Expense Tracker', 'Marketing Automation Tool'] },
+    
+    // Backend
+    { name: 'Python', group: 'Backend', icon: 'Terminal', projects: ['Expense Tracker', 'Cattle Feed Management System', 'Marketing Automation Tool'] },
+    { name: 'Django', group: 'Backend', icon: 'Terminal', projects: ['Marketing Automation Tool', 'Student Management System'] },
+    { name: 'Node.js', group: 'Backend', icon: 'Server', projects: ['ReachCopilot'] },
+    { name: 'Express.js', group: 'Backend', icon: 'Server', projects: ['ReachCopilot', 'SaaS Backends'] },
+    { name: 'Supabase', group: 'Database', icon: 'Database', projects: ['Expense Tracker', 'Marketing Automation Tool', 'Student Management System'] },
+    { name: 'PostgreSQL', group: 'Database', icon: 'Database', projects: ['Cattle Feed Management System', 'Student Management System'] },
+    { name: 'SQL', group: 'Database', icon: 'Database', projects: ['Expense Tracker', 'Cattle Feed Management System'] },
+    
+    // AI
+    { name: 'Cursor AI', group: 'AI', icon: 'Bot', projects: ['All Projects'] },
+    { name: 'Claude Code', group: 'AI', icon: 'Bot', projects: ['ReachCopilot'] },
+    { name: 'OpenCode', group: 'AI', icon: 'Activity', projects: ['Nschool Academy'] },
+    { name: 'OpenClaw', group: 'AI', icon: 'Cpu', projects: ['AI Agent Workflows'] },
+    { name: 'OpenAI API', group: 'AI', icon: 'Brain', projects: ['Expense Tracker', 'Marketing Automation Tool'] },
+    
+    // Tools
+    { name: 'Git', group: 'Tools', icon: 'GitBranch', projects: ['All Projects'] },
+    { name: 'VS Code', group: 'Tools', icon: 'Settings', projects: ['Local Dev'] },
+    { name: 'Postman', group: 'Tools', icon: 'Globe', projects: ['API Integration & Testing'] }
+  ],
   
   projects: [
     {
       id: 1,
       title: "Expense Tracker",
-      description: "AI-powered personal finance SaaS application with intelligent expense categorization. Features multi-user authentication, real-time dashboards, and smart spending insights for individuals and freelancers.",
-      tech: ["React", "Flask", "PostgreSQL", "Tailwind CSS", "AI Categorization"],
+      description: "Personal finance SaaS application with intelligent expense categorization. Built with a React client, Django core REST API, and Supabase database authentication/storage.",
+      tech: ["React", "Python", "Django", "Supabase", "SQL"],
       github: "",
       demo: "",
       featured: true,
@@ -64,7 +64,7 @@ export const portfolioData = {
       id: 2,
       title: "Cattle Feed Management System",
       description: "A comprehensive farm management system for cattle feed inventory, feeding schedules, and AI-powered feed optimization. Built as a team project with focus on usability and scalability for small-to-medium farms.",
-      tech: ["React", "Java", "PostgreSQL", "MySQL", "AI Optimization"],
+      tech: ["React", "Python", "Django", "PostgreSQL", "SQL"],
       github: "",
       demo: "",
       featured: true,
@@ -75,7 +75,7 @@ export const portfolioData = {
       id: 3,
       title: "Marketing Automation Tool",
       description: "AI-powered marketing automation platform enabling non-technical users to create intelligent workflows. Features automated campaign management, lead scoring, and predictive analytics.",
-      tech: ["React", "Django", "Python", "AI APIs", "Tailwind CSS"],
+      tech: ["React", "Django", "Python", "Supabase", "Redis"],
       github: "",
       demo: "",
       featured: true,
@@ -86,7 +86,7 @@ export const portfolioData = {
       id: 4,
       title: "Dynamic Media Handler",
       description: "Robust media processing system with AI capabilities for automatic content tagging and optimization.",
-      tech: ["React", "Node.js", "Python"],
+      tech: ["React", "Python", "Django", "Supabase"],
       github: "",
       demo: "",
       featured: false
@@ -95,7 +95,7 @@ export const portfolioData = {
       id: 5,
       title: "Student Management System",
       description: "Comprehensive dashboard for managing student data, tracking progress, and generating performance reports.",
-      tech: ["React", "Django", "PostgreSQL"],
+      tech: ["React", "Django", "Supabase", "PostgreSQL"],
       github: "",
       demo: "",
       featured: false
@@ -107,7 +107,7 @@ export const portfolioData = {
       id: 1,
       name: "AI Expense Categorization",
       description: "Rule-based and AI-assisted expense auto-tagging system for intelligent personal finance management",
-      tech: ["React", "Flask", "PostgreSQL", "AI Logic"],
+      tech: ["React", "Python", "Django", "Supabase", "SQL"],
       metrics: {
         accuracy: "90%",
         categories: "50+",
@@ -118,7 +118,7 @@ export const portfolioData = {
       id: 2,
       name: "Feed Optimization Engine",
       description: "AI-powered feed suggestions based on cattle type, weight, and usage patterns for optimal farm management",
-      tech: ["React", "Java", "AI Algorithms", "PostgreSQL"],
+      tech: ["React", "Python", "Django", "PostgreSQL", "SQL"],
       metrics: {
         suggestions: "Real-time",
         optimization: "30%",
@@ -142,10 +142,10 @@ export const portfolioData = {
     {
       id: 1,
       company: "ReachCopilot",
-      role: "AI Full Stack Developer",
+      role: "AI Frontend Engineer",
       period: "2023 - Present",
-      description: "Building AI-powered marketing workflows using Cursor AI and Claude Code that improved user engagement by 40%. Developed intuitive interfaces enabling non-technical users to create complex automation. Implemented dynamic media handling systems with AI agent assistance.",
-      technologies: ["React", "Redux", "TypeScript", "Node.js", "AI APIs", "Cursor AI", "Claude Code"]
+      description: "Developed and optimized AI-powered user interfaces and frontend marketing workflows that improved user engagement by 40%. Built highly intuitive React client views enabling non-technical users to build and run automation. Collaborated closely with backend teams to integrate APIs and media systems.",
+      technologies: ["React", "Redux", "TypeScript", "Tailwind CSS", "AI APIs", "Cursor AI", "Claude Code"]
     },
     {
       id: 2,
@@ -153,16 +153,14 @@ export const portfolioData = {
       role: "Developer & Trainer",
       period: "2021 - 2023",
       description: "Architected full-stack SaaS dashboards using OpenCode and Cursor AI. Trained 50+ students on modern web development with AI-assisted learning. Mentored 5+ real-world projects from conception to deployment.",
-      technologies: ["React", "Django", "Python", "PostgreSQL", "OpenCode", "Cursor AI"]
+      technologies: ["React", "Django", "Python", "PostgreSQL", "SQL", "Git"]
     }
   ],
   
   navigation: [
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "AI Showcase", href: "#ai-showcase" },
-    { name: "Experience", href: "#experience" },
-    { name: "Contact", href: "#contact" }
+    { name: "About Me", href: "#about" },
+    { name: "Skills Universe", href: "#skills" },
+    { name: "Featured Work", href: "#projects" },
+    { name: "Work History", href: "#experience" }
   ]
 };

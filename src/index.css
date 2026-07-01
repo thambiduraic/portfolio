@@ -24,6 +24,6 @@
   }
   
   .glass {
-    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+    @apply bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl;
   }
 }

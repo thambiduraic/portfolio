@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { FaDownload } from 'react-icons/fa';
-import { NeuralNetwork } from '../components/effects/NeuralNetwork';
+import { Download } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { portfolioData } from '../data/portfolio';
 import { useState, useEffect } from 'react';
+import { NeuralNetwork } from '../components/effects/NeuralNetwork';
 
 export const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -22,11 +22,12 @@ export const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-dark pt-24">
+      {/* 3D Neural Network Canvas Background */}
       <NeuralNetwork />
-      
-      {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-dark/50 to-dark" />
-      <div className="absolute inset-0 bg-gradient-radial from-primary/5 via-transparent to-transparent" />
+
+      {/* Background gradients */}
+      <div className="absolute inset-0 bg-gradient-to-b from-dark/0 via-dark/30 to-dark pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.15),transparent_60%)] pointer-events-none" />
       
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <motion.h1
@@ -54,7 +55,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-lg text-text-muted mb-12 max-w-2xl mx-auto"
+          className="text-lg text-text-muted mb-12 max-w-2xl mx-auto font-medium"
         >
           {portfolioData.personal.tagline}
         </motion.p>
@@ -76,8 +77,8 @@ export const Hero = () => {
             </a>
           </Button>
           <Button variant="ghost" size="lg" className="w-full sm:w-auto">
-            <a href="/Thambidurai-Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-              <FaDownload /> Resume
+            <a href={portfolioData.personal.resumeLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <Download className="w-4 h-4" /> Resume
             </a>
           </Button>
         </motion.div>
@@ -88,7 +89,7 @@ export const Hero = () => {
           transition={{ delay: 1.2, duration: 1 }}
           className="mt-12"
         >
-          <div className="animate-bounce">
+          <div className="animate-bounce flex justify-center">
             <div className="w-6 h-10 border-2 border-text-muted rounded-full flex justify-center">
               <div className="w-1.5 h-3 bg-text-muted rounded-full mt-2 animate-pulse" />
             </div>
@@ -98,7 +99,7 @@ export const Hero = () => {
 
       {/* Mouse follower glow effect */}
       <div
-        className="absolute w-96 h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none transition-transform duration-300"
+        className="absolute w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none transition-transform duration-300"
         style={{
           left: mousePosition.x - 192,
           top: mousePosition.y - 192,
