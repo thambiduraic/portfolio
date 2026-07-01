@@ -81,24 +81,6 @@ export const portfolioData = {
       featured: true,
       isAiPowered: true,
       isTeamProject: false
-    },
-    {
-      id: 4,
-      title: "Dynamic Media Handler",
-      description: "Robust media processing system with AI capabilities for automatic content tagging and optimization.",
-      tech: ["React", "Python", "Django", "Supabase"],
-      github: "",
-      demo: "",
-      featured: false
-    },
-    {
-      id: 5,
-      title: "Student Management System",
-      description: "Comprehensive dashboard for managing student data, tracking progress, and generating performance reports.",
-      tech: ["React", "Django", "Supabase", "PostgreSQL"],
-      github: "",
-      demo: "",
-      featured: false
     }
   ],
   
