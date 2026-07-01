@@ -10,7 +10,7 @@ export const portfolioData = {
       github: "https://github.com/thambiduraic",
       linkedin: "https://www.linkedin.com/in/thambidurai-c-700b801b6/"
     },
-    resumeLink: "https://drive.google.com/file/d/17PMNTgMJOe1KJFb51icSmRwmo-9-7nxD/view?usp=sharing",
+    resumeLink: "https://drive.google.com/file/d/1hS56p0ydeY7fsWjKm7sRvir6E1S9jmq2/view?usp=sharing",
     stats: {
       yearsExperience: 2,
       projectsCompleted: 6,
